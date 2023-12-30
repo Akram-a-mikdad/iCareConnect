@@ -66,6 +66,7 @@ export class PatientHistoryComponent implements OnInit {
       this.systemSettingsService.getSystemSettingsByKey(
         "iCare.clinic.genericPrescription.orderType"
       );
+    
     this.prescriptionArrangementFields$ = this.systemSettingsService
       .getSystemSettingsByKey("iCare.clinic.prescription.arrangement")
       .pipe(
